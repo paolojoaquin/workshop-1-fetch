@@ -1,3 +1,41 @@
 @import 'tailwindcss/dist/base.css';
 @import 'tailwindcss/dist/components.css';
 @import 'tailwindcss/dist/utilities.css';
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #dff5c6;
+}
+.main{
+    width: 85%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 5px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.main__item{
+    border: 3px solid black;
+    border-radius: 10px;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main__item img{
+    width: 80%;
+    align-self: center;
+}
+.main__item h2, .main__item p{
+    margin-left: 20px;
+}
+.main__item h2{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.main__item p{
+    font-family: monospace, sans-serif;
+    margin-bottom: 10px;
+}
